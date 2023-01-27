@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "./page.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -12,13 +12,14 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
+        <h1>NextJS Starter App</h1>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -45,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.grid}>
+      <div id="links" className={styles.grid}>
         <a
           href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -78,7 +79,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={inter.className}>
+          <h2
+            className={inter.className}
+            style={{ color: "rgb(159, 43, 104)" }}
+          >
             Deploy <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
@@ -87,5 +91,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
